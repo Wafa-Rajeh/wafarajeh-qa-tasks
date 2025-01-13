@@ -11,7 +11,7 @@ describe('task2b', () => {
         cy.get("#nickname_field").type("lana")
         cy.get("#summary_field").type("not good")
         cy.get("#review_field").type("bad color")
-       cy.contains("span","Submit Review").click()
+       cy.contains("span","Submit Review").click() 
       cy.contains("You submitted your review for moderation.").should("be.visibel")
        
 
